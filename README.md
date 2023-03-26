@@ -1,6 +1,6 @@
-# Phaser 3 Template
+# Circles
 
-Phaser 3 game template
+Phaser 3 game
 
 Created by [daniel@hookins.net](mailto:daniel@hookins.net)
 
