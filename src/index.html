@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Phaser Template</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.10.0/phaser.min.js"></script>
-</head>
-<body>
 
-<script>
-    // Define game properties
-    var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+    <style>
+      body {
+        background-color: #060606;
+      }
+      
+      html,
+      body,
+      #game-container {
+        margin: 0;
+        padding: 0;
+      }
 
-    // Preload assets
-    function preload() {
-        // Load your assets here
-    }
+      #game-container {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    // Create game elements
-    function create() {
-        // Create your game elements here
-    }
+      #game-container > canvas {
+        border-radius: 5px;
+      }
+    </style>
+  </head>
 
-    // Update game state
-    function update() {
-        // Update your game elements here
-    }
-</script>
-
-</body>
+  <body>
+    <div id="game-container"></div>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <script src="game.js" type="module"></script>
+  </body>
 </html>
